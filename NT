@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nông Trại Vui Vẻ - Game Trồng Cây Của Riêng Bạn</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Nunito) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* Tùy chỉnh font chữ và màu sắc chủ đạo */
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #F0FFF4; /* Màu xanh lá cây rất nhạt */
+        }
+        .hero-section {
+            background-color: #A7F3D0; /* Màu xanh mint */
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .cta-button:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-green-600">
+                <i class="fas fa-seedling mr-2"></i>Nông Trại Vui Vẻ
+            </a>
+            <a href="#play" class="cta-button bg-yellow-400 text-gray-800 font-bold px-6 py-2 rounded-full hover:bg-yellow-500">
+                Chơi Ngay!
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section - Phần giới thiệu chính -->
+        <section class="hero-section py-20 md:py-28">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-green-800 leading-tight mb-4">Tạo Dựng Nông Trại Trong Mơ Của Bạn!</h1>
+                    <p class="text-lg text-green-700 mb-8">Trồng cây, thu hoạch, trang trí và xây dựng một thế giới nông trại đầy màu sắc. Bắt đầu cuộc phiêu lưu xanh của bạn ngay hôm nay!</p>
+                    <a href="#play" class="cta-button bg-orange-500 text-white font-bold text-xl px-10 py-4 rounded-full inline-block shadow-lg hover:bg-orange-600">
+                        Bắt Đầu Trồng Cây <i class="fas fa-carrot ml-2"></i>
+                    </a>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <img src="https://placehold.co/600x450/D1FAE5/34D399?text=Nông+Trại+Đáng+Yêu" alt="Hình ảnh minh họa một nông trại hoạt hình dễ thương" class="rounded-3xl shadow-2xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section - Phần tính năng -->
+        <section id="features" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Điều Gì Chờ Đón Bạn?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-12">Khám phá những hoạt động thú vị trong khu vườn nhỏ của riêng bạn.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Tính năng 1 -->
+                    <div class="feature-card bg-green-50 p-8 rounded-2xl shadow-md">
+                        <div class="text-5xl mb-4 text-green-500"><i class="fas fa-leaf"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Trồng & Thu Hoạch</h3>
+                        <p class="text-gray-600">Gieo trồng hàng chục loại cây trái, hoa màu và thu hoạch những sản phẩm tươi ngon.</p>
+                    </div>
+                    <!-- Tính năng 2 -->
+                    <div class="feature-card bg-blue-50 p-8 rounded-2xl shadow-md">
+                        <div class="text-5xl mb-4 text-blue-500"><i class="fas fa-paint-roller"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Trang Trí Sáng Tạo</h3>
+                        <p class="text-gray-600">Tự do thiết kế và trang trí nông trại với hàng trăm vật phẩm độc đáo và dễ thương.</p>
+                    </div>
+                    <!-- Tính năng 3 -->
+                    <div class="feature-card bg-yellow-50 p-8 rounded-2xl shadow-md">
+                        <div class="text-5xl mb-4 text-yellow-500"><i class="fas fa-users"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Kết Nối Bạn Bè</h3>
+                        <p class="text-gray-600">Ghé thăm nông trại của bạn bè, giúp đỡ họ và nhận những phần quà bất ngờ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Play Section - Hướng dẫn chơi -->
+        <section class="py-20">
+             <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-12">Bắt Đầu Thật Dễ Dàng!</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <img src="https://placehold.co/200x200/FEF3C7/F59E0B?text=1.+Gieo+Hạt" class="rounded-full shadow-lg mx-auto mb-4" alt="Gieo hạt">
+                        <h3 class="text-xl font-bold">1. Gieo Hạt</h3>
+                        <p>Chọn loại cây bạn yêu thích và gieo xuống những ô đất màu mỡ.</p>
+                    </div>
+                     <div class="text-center">
+                        <img src="https://placehold.co/200x200/DBEAFE/60A5FA?text=2.+Chăm+Sóc" class="rounded-full shadow-lg mx-auto mb-4" alt="Tưới nước">
+                        <h3 class="text-xl font-bold">2. Chăm Sóc</h3>
+                        <p>Đừng quên tưới nước và chăm bón để cây của bạn lớn nhanh nhé!</p>
+                    </div>
+                     <div class="text-center">
+                        <img src="https://placehold.co/200x200/FEE2E2/F87171?text=3.+Thu+Hoạch" class="rounded-full shadow-lg mx-auto mb-4" alt="Thu hoạch">
+                        <h3 class="text-xl font-bold">3. Thu Hoạch</h3>
+                        <p>Gặt hái thành quả của bạn và bán chúng để mở rộng nông trại.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section - Kêu gọi hành động -->
+        <section id="play" class="bg-yellow-300 py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-extrabold text-yellow-900 mb-4">Bạn Đã Sẵn Sàng Chưa?</h2>
+                <p class="text-yellow-800 text-lg max-w-xl mx-auto mb-8">Một thế giới xanh tươi và đầy niềm vui đang chờ bạn khám phá. Không cần tải về, chơi ngay trên trình duyệt!</p>
+                <a href="#" class="cta-button bg-green-600 text-white font-bold text-2xl px-12 py-5 rounded-full inline-block shadow-lg hover:bg-green-700">
+                    CHƠI MIỄN PHÍ!
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-xl hover:text-green-400"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-xl hover:text-green-400"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-xl hover:text-green-400"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2025 Nông Trại Vui Vẻ. Một sản phẩm của các nhà phát triển game yêu cây cối.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
